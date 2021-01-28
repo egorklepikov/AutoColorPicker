@@ -7,11 +7,11 @@ public class MainFrame extends JFrame {
   private final JColorChooser colorPicker;
 
   public MainFrame() {
-    setSize(550, 450);
+    setSize(600, 450);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     colorPicker = new JColorChooser();
     colorPicker.setBorder(null);
-    colorPicker.setSize(550, 450);
+    colorPicker.setSize(600, 450);
     colorPicker.setVisible(true);
     new MouseMotionListener().start();
     add(colorPicker);
@@ -36,6 +36,11 @@ public class MainFrame extends JFrame {
     @Override
     public void run() {
       while (true) {
+        try {
+          Thread.sleep(20);
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
         Point point = MouseInfo.getPointerInfo().getLocation();
         colorPicker.setColor(robot.getPixelColor((int) point.getX(), (int) point.getY()));
       }
