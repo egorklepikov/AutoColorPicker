@@ -62,7 +62,6 @@ public class MainFrame extends JFrame {
         Color pixelColor = robot.getPixelColor((int) point.getX(), (int) point.getY());
         colorPicker.setColor(pixelColor);
         previewPane.changeCurrentColor(pixelColor);
-
       }
     }
   }
@@ -75,12 +74,8 @@ public class MainFrame extends JFrame {
       }
     }
 
-    public void nativeKeyReleased(NativeKeyEvent e) {
+    public void nativeKeyReleased(NativeKeyEvent e) { }
 
-    }
-
-    public void nativeKeyTyped(NativeKeyEvent e) {
-
-    }
+    public void nativeKeyTyped(NativeKeyEvent e) { }
   }
 }
