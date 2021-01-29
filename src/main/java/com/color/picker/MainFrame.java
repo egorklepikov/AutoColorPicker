@@ -1,18 +1,17 @@
 package com.color.picker;
 
-import com.bric.colorpicker.ColorPicker;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class MainFrame extends JFrame {
-  private final ColorPicker colorPicker;
+  private final JColorChooser colorPicker;
 
   public MainFrame() {
     setSize(600, 450);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setAlwaysOnTop(true);
-    colorPicker = new ColorPicker(true, true);
+    colorPicker = new JColorChooser();
     colorPicker.setBorder(null);
     colorPicker.setSize(600, 450);
     colorPicker.setVisible(true);
