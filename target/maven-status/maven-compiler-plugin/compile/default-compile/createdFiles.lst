@@ -1,2 +1,5 @@
-com\color\picker\MainFrame$MouseMotionListener.class
+com\color\picker\PreviewPane.class
 com\color\picker\MainFrame.class
+com\color\picker\MainFrame$GlobalKeyListener.class
+com\color\picker\MainFrame$MouseMotionListener.class
+com\color\picker\MainFrame$1.class
